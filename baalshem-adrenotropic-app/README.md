@@ -8,7 +8,17 @@
 
 Weclome to the daily planet, we need your superhuman developer skills to help us share news with the world. We've seen that you have some express knowledge and need you to make us a mock website as soon as possible.
 
-You'll need to use an `sequelize` to create and display articles.
+## DB Set Up
+
+To get started, you'll want to cd into the repo directory (`cd baalshem-adrenotropic-app`) and then run the following commands at a bash prompt:
+```bash
+createdb baalshem-adrenotropic-app
+psql -d baalshem-adrenotropic-app -a -f baalshem-adrenotropic-app.sql
+```
+
+These command will initialize the database and put some starter data in for you.
+
+You'll need to use `sequelize` to create and display articles.
 
 ## Routes
 
@@ -16,6 +26,7 @@ You'll need the following `article` routes:
 
 * `get`  `/articles` to display a summary of each article.
 * `get` `/articles/new` to get a form to save a new article
+    - Note that this form includes a drop-down menu to select an author who writes each article.
 * `post` `/articles` to save an article
 * `get` `/articles/:id` to find an article by id and displaya it
 
