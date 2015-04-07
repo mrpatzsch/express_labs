@@ -11,8 +11,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 var db = require("./models");
 
 app.get('/articles', function(req,res) {
-  console.log("GET /articles");
-  res.send("Set up a response for this route!");
+  db.articles.all().then(function(articles) {
+  	res.render('articles', {articlesList: articles})
+  })
 });
 
 app.get('/articles/new', function(req,res) {
