@@ -3,7 +3,6 @@
 
 ### Background
 
-
 <img src="daily_planet.jpg">
 
 Weclome to the daily planet, we need your superhuman developer skills to help us share news with the world. We've seen that you have some express knowledge and need you to make us a mock website as soon as possible.
@@ -44,7 +43,7 @@ The relationship we're going to be creating between them is a One-to-many relati
 
 To set up the relationship, you'll need to edit the models that `sequelize` creates for you.
 
-## Routes
+#### Routes
 
 You'll need the following `article` routes:
 
@@ -68,14 +67,26 @@ You'll need the following `author` routes:
 You'll need the following `site` related routes:
 
 * `get` `/` serve the homepage of your site.
+  - This route should point to `views/site/index.ejs` and I'd like to see everyone generate some basic navigational links to help people get to the following URLs:
+    + `/articles`
+    + `/authors`
+
+
 * `get` `/about` serve a static about daily planet page.
 * `get` `/contact` serve a static `contact` page.
 
-## Structure
+#### Views
 
-All your article related views should be in an `views/articles` folder. Each article should utilize `ejs` to render the page. Your `site` related views `index`, `about`, and `contact` should also have a folder `views/site`. 
+All your article related views are in an `views/articles` folder. Each article should utilize `ejs` to render the page. Your author views are in the `views/authors` folder. Your `site` related views `index`, `about`, and `contact` are in the folder `views/site`. 
+
+You'll want to review the EJS files that go with each route to figure out what query you want to build with `sequelize` and what variables to pass through using `res.render()`.
 
 
-## Bonus
+#### Bonus
 
-Include some navigation links to help the user navigate the site.
+Include some navigation links on each page to help the user navigate the site.
+
+### Note
+Please [let me know](mailto:brett.levenson@ga.co) if there are any issues with the set up instructions or you have questions about the lab. I'll be on Slack for a while.
+
+> Last updated by Brett Levenson on April 6, 2015.
