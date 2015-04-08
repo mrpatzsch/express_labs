@@ -12,7 +12,7 @@
 <% articlesList.forEach(function(article) { %>
 <div style="margin-top: 10px;">
   <a href="/articles/<%= article.id %>"><%= article.title %></a><br />
-  Author: <%= article.Author.first_name  %> <%= article.Author.last_name  %>
+  Author: <a href="/authors/<%= article.Author.id %>"><%= article.Author.first_name  %> <%= article.Author.last_name  %></a>
   <br />
 </div>
 <% }) %>

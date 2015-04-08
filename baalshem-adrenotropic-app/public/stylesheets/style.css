@@ -1,0 +1,68 @@
+* {
+	font-family: helvetica;
+}
+body {
+	margin: 20px auto;
+	text-align: center;
+}
+
+input {
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
+	margin-top: 20px;
+	display: inline;
+}
+
+textarea {
+	width: 400px;
+	height: 200px;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+button {
+	height: 40px;
+	width: 100px;
+	font-size: 24px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+.header {
+	background-image: url(http://vignette4.wikia.nocookie.net/dccu/images/6/6f/Logo_Daily_Planet.jpg/revision/latest?cb=20130824070638);
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-position: center center;
+	margin: 0 auto;
+	height: 200px;
+}
+
+.nav-bar {
+	list-style-type: none;
+    margin: 20px auto;
+    text-align: center;
+}
+.nav-bar li {
+	display: inline;
+	margin: 0 10px;
+	padding: 10px 40px;
+	font-size: 32px;
+	border: 4px inset grey;
+}
+
+.articles {
+	width: 400px;
+	margin: 20px 20px;
+	float: left;
+}
+
+.article {
+	float: left;
+	text-align: left;
+}
